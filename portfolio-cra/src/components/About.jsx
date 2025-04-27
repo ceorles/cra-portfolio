@@ -31,7 +31,7 @@ const About = () => {
                     <p>
                     Yo, I'm Charles Berches, an IT student from Dalubhasaan ng Lungsod ng Lucena.
                     I code not for fun, but for the grades. You see that dancing Pikachu?
-                    Cute, right? Try to hover it more than once.
+                    Cute, right? Try hovering over it multiple times.
                     </p>
                 </div>
                 <div
