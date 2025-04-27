@@ -1,0 +1,41 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 1.5rem 6rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(50, 50, 50, 0.6), rgba(0, 0, 0, 0.8));
+    font-family: 'Comfortaa', cursive;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+  
+.logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+  
+.nav-links li a:hover,
+.logo a:hover {
+    color: #00bcd4;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}

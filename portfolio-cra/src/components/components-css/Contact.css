@@ -1,0 +1,106 @@
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #e0e0e0;
+    background: rgba(30, 30, 60, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 24px 24px 0 0;
+    max-width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+.contact-section h1 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+    cursor: context-menu;
+}
+
+.contact-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-icons li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-icons li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact-icons li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    font-family: 'Comfortaa', cursive;
+    cursor: context-menu;
+}
+
+.footer strong {
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.contact-icons li a {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    padding: 12px;
+    /* background: rgba(255, 255, 255, 0.08); */
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.contact-icons li a::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0%, transparent 60%);
+    opacity: 0;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.contact-icons li a:hover::after {
+    animation: sparkleMove 1.2s linear forwards;
+}
+
+@keyframes sparkleMove {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(45deg) scale(0.5);
+    }
+    30% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(45deg) scale(1);
+    }
+    70% {
+        opacity: 0.8;
+        transform: translate(50%, 50%) rotate(45deg) scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(100%, 100%) rotate(45deg) scale(1.5);
+    }
+}

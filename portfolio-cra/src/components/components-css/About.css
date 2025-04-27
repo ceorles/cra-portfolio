@@ -1,0 +1,115 @@
+.about-section {
+    height: 100vh;
+    padding: 0 2rem;
+    color: #fff;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+
+    background: rgba(30, 30, 60, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+  
+.about-section h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    cursor: context-menu;
+}
+  
+.about-content {
+    display: flex;
+    gap: 3rem;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    margin-top: 50px;
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: left;
+    max-width: 500px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    cursor: context-menu;
+}
+  
+.about-image {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+  
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+  
+.about-image img:hover {
+    transform: scale(1.1);
+}
+  
+.speech-bubble {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    font-weight: bold;
+    z-index: 10;
+    animation: fadeIn 0.3s ease forwards;
+}
+  
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: white;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+  

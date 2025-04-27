@@ -1,0 +1,42 @@
+.home-section {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    overflow: hidden; 
+}
+
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+  
+.home-section h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
+    transform: translateY(30px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.animate-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.home-section h1:hover {
+    transform: scale(1.1) translateY(-5px);
+    color: #FFFFFF;
+    cursor: pointer;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+
+.home-section h1:hover {
+    transition: transform 0.2s ease, color 0.2s ease;
+}

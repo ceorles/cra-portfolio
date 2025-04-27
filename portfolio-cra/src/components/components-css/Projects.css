@@ -1,0 +1,139 @@
+.projects-section {
+    height: 100vh;
+    color: #FFFFFF;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Comfortaa', cursive;
+
+    padding: 2rem;
+    text-align: center;
+    border-radius: 24px;
+    margin: 5rem auto;
+    max-width: 100%;
+    
+    
+    transition: all 0.4s ease;
+}
+  
+.projects-section h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    cursor: context-menu;
+}
+  
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+  
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: floatUp 1s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+  
+.project-card:hover {
+    transform: scale(1.02);
+}
+  
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.4s ease;
+    border-radius: 12px;
+}
+  
+.project-card a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    font-weight: bold;
+    font-size: 1rem;
+}
+  
+.project-card:hover img {
+    filter: blur(3px) brightness(0.6);
+}
+  
+.project-card:hover a {
+    opacity: 1;
+}
+  
+.github-link {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: context-menu;
+}
+
+.github-link a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+  
+.github-link img {
+    width: 20px;
+    vertical-align: middle;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.project-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.project-card:nth-child(5) {
+    animation-delay: 1s;
+}
