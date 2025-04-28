@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './components-css/Home.css';
 import { Particles } from 'react-tsparticles';
 
-// YOU MUST BE WONDERING WHY THE VARIABLE NAME IS "Her" WELL, IT'S BECAUSE THIS IS HOME SECTION AND SHE'S MY HOME.
-const Her = () => {
+const Her = () => { // YOU MUST BE WONDERING WHY THE VARIABLE NAME IS "Her" WELL, IT'S BECAUSE THIS IS HOME SECTION AND SHE'S MY HOME.
     const [animate, setAnimate] = useState(false);
 
     useEffect(() => {
