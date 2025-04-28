@@ -1,6 +1,6 @@
 .about-section {
     height: 100vh;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     color: #fff;
     background: none;
     display: flex;
@@ -8,7 +8,6 @@
     align-items: center;
     justify-content: center;
     font-family: 'Comfortaa', cursive;
-
     background: rgba(30, 30, 60, 0.25);
     backdrop-filter: blur(4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -111,5 +110,21 @@
         max-width: 100%;
         text-align: center;
     }
+
+    .about-section h1 {
+        margin-bottom: 0;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+      
+}
+
+@media (max-width: 425px) {
+    .about-text {
+        margin-top: 0;
+    }
+      
 }
   

@@ -1,5 +1,5 @@
 .contact-section {
-    padding: 4rem 2rem;
+    padding: 4rem 0;
     text-align: center;
     color: #e0e0e0;
     background: rgba(30, 30, 60, 0.25);
@@ -102,5 +102,16 @@
     100% {
         opacity: 0;
         transform: translate(100%, 100%) rotate(45deg) scale(1.5);
+    }
+}
+@media (max-width: 768px) {
+    .contact-icons {
+        display: block;
+        gap: 2rem;
+    }
+
+    .contact-icons li a img {
+        width: 80%;
+        height: 80%;
     }
 }

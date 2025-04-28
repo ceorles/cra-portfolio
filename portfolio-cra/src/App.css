@@ -1,10 +1,10 @@
-.container {
+.lelagela {
     background: linear-gradient(rgba(50, 50, 50, 0.3), rgba(0, 0, 0, 0.5)), url(../public/pokemong.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
+    scroll-behavior: smooth;
 }
 
 html {
