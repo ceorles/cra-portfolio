@@ -39,6 +39,13 @@ const Projects = () => (
                     Visit Website
                 </a>
             </div>
+
+            <div className="project-card">
+                <img src="manga.png" alt="MANGA" />
+                <a href="https://ceorles-library.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    Visit Website
+                </a>
+            </div>
         </div>
 
         <p className="github-link">
